@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(103, 103, 255);
+}
+.title{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin: 30px;
+}
+.container{
+    background-color: white;
+    width: 60%;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.container-form{
+    width: 50%;
+    float: left;
+}
+.form{
+    width: 50%;
+}
+.form-title{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.form-select{
+    margin-bottom: 20px;
+    width: 80%;
+}
+.form-iput{
+    margin-bottom: 20px;
+    width: 80%;
+}
+.form-send{
+    margin-bottom: 20px;
+    width: 80%;
+    background-color: rgb(99, 88, 255);
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+.form-send:hover{
+    background-color: rgb(233, 71, 22);
+}
+.listNames{
+    width: 40%;
+    float: right;
+    margin-left: 40px;
+}
+.listNames_title{
+    text-align: center;
+    color: rgb(66, 66, 209)
+}
+.listNames_li{
+    list-style: none;
+    background-color: rgb(103, 103, 255);
+    padding: 2%;
+    color: white;
+    text-align: center;
+}
