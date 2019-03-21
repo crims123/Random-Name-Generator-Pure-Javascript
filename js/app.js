@@ -24,3 +24,26 @@ function handleForm (e) {
     }
     requestApi(url);
 }
+
+function requestApi (url) {
+    fetch(url)
+    .then((response) => {
+        return response.json();
+    })
+    .then((response) => {
+        const names = response;
+        const list =document.querySelector('#list');
+        let htmlNames  = document.createElement('h2');
+        htmlNames.className = 'listNames_title'
+        htmlNames.innerHTML = 'Generated Names';
+        list.appendChild(htmlNames)
+        const listName =document.querySelector('#listNames');
+        listName.appendChild(htmlNames);
+        names.forEach( (item) => {
+            const li = document.createElement('li');
+            li.innerHTML=`${item.name}`;
+            li.className = 'listNames_li';
+            listName.appendChild(li);
+        });
+    })
+}
